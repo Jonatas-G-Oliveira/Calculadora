@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+div#calculadora {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 8px;
+    width: 400px;
+    background-color:#C4C4C4;
+}
+
+div#calculadora > h3{
+    font-size: 0.8em;
+    color:#666666 ;
+}
+
+div#operacoes{
+    text-align: right;
+    overflow-wrap: break-word;
+    min-height: 85px;
+}
+
+div#valor-anterior{
+    min-height: 14px;
+    font-size: 14px;
+    color: #777777 ;
+}
+
+div#valor-atual{
+    font-size: 48px;
+    color:#000000 ;
+    font-weight: 700;
+    
+}
+
+div#botoes{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+div#botoes > button{
+    height: 4em;
+    font-size: 1.2em;
+    border: 1px  transparent;
+    border-radius: 0px;
+}
+
+div#botoes > button:hover{
+    background-color: #BABABA;
+    cursor: pointer;
+}
+
+div#botoes > .simbolos{
+    background-color: #DBDBDB;
+}
+
+div#botoes > #igual{
+    grid-column: span 2;
+    background-color: #70a7b3;
+}
+
+div#botoes > #igual:hover{
+    background-color: #4b747e;
+}
